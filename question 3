@@ -1,0 +1,22 @@
+//this is question number 3 page 41
+//exercise 3.3
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int loan=0, years=0;
+    double rate=0;
+    double payment=0;
+    cout << "Input loan amount(RM) : ";
+    cin >> loan;
+    cout << "Input annual interest rate (%) : ";
+    cin >> rate;
+    cout << "Input number of years : ";
+    cin >> years;
+    payment= (loan*rate/100 * years + loan ) /120;
+    cout << "Monthly payment for this loan is (RM) : "<<payment;
+    
+    return 0;
+}
